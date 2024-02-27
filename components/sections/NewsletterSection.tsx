@@ -26,7 +26,7 @@ function NewsLetterSection() {
 
           <Button
           
-            classes="w-[9.25rem] h-[3.25rem] z-[10]"
+            className="w-[9.25rem] h-[3.25rem] z-[10]"
             isGradient
                   >Subscribe
                       </Button>
