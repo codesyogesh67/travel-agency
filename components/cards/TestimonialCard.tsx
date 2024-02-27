@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"
 
 interface IProps {
   imageUrl: string;
@@ -33,11 +34,9 @@ function TestimonialCard({
         <p className="text-lightGray font-[500] text-[0.875rem]">{position}</p>
         <div className="absolute top-[-4rem] md:left-[-4rem]">
           {!isBackdrop && (
-            <img
-              src={imageUrl}
-              alt="reviewer photo"
-              className="w-[4.25rem] h-[4.25rem] rounded-full"
-            />
+           
+                      <Image src={imageUrl} alt="reviewr photo" width={50} height={50}
+                      className="w-[4.25rem] h-[4.25rem] rounded-full" />
           )}
         </div>
       </div>

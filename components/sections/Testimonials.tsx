@@ -23,11 +23,13 @@ const Testimonials = (props: Props) => {
           </p>
   
           <div className="mt-[5.12rem] ">
-            <img
-              src="/images/slide-indicator.png"
-              alt="slide indicator"
-              className="hidden md:block"
-            />
+          
+                        <Image
+                           src="/images/slide-indicator.png"
+                           alt="slide indicator"
+                           className="hidden md:block" width={60} height={60} />
+
+              
           </div>
         </div>
         <div className="flex items-center gap-4 md:gap-[4.12rem]">

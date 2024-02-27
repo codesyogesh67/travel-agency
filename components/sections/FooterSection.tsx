@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "@/components/navbar/Logo";
+import Image from "next/image"
 
 function FooterSection() {
   return (
@@ -59,9 +60,13 @@ function FooterSection() {
         </div>
         <div className="flex flex-col gap-4 items-center">
           <div className="flex gap-4 items-center">
-            <img src="/images/facebook-icon.png" alt="social icon" />
+            <Image src="/images/facebook-icon.png" alt="social icon" width={60} height={60} />
+            <Image src="/images/instagram-icon.png" alt="social icon" width={60} height={60} />
+            <Image src="/images/x-icon.png" alt="social icon" width={60} height={60} />
+
+            {/* <img src="/images/facebook-icon.png" alt="social icon" />
             <img src="/images/instagram-icon.png" alt="social icon" />
-            <img src="/images/x-icon.png" alt="social icon" />
+            <img src="/images/x-icon.png" alt="social icon" /> */}
           </div>
           <p className="text-lightGray font-[500] text-[1.25rem]">
             Discover our app
@@ -70,10 +75,11 @@ function FooterSection() {
             <div className="bg-black rounded-extraLarge px-[1.06rem] py-[0.58rem] w-[11rem]">
               <div className="flex gap-4 items-center">
                 <div>
-                  <img
-                    src="/images/google-play-icon.png"
-                    alt="google play icon"
-                  />
+                
+                              <Image src="/images/google-play-icon.png"
+                    alt="google play icon" width={20} height={20} />
+
+             
                 </div>
 
                 <div>
@@ -90,7 +96,8 @@ function FooterSection() {
             <div className="bg-black rounded-extraLarge px-[1.06rem] py-[0.58rem] w-[14rem]">
               <div className="flex gap-4 items-center">
                 <div>
-                  <img src="/images/app-icon.png" alt="google play icon" />
+               
+                  <Image src="/images/app-icon.png" alt="google play icon"  width={20} height={20} />
                 </div>
 
                 <div>
